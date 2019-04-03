@@ -1,0 +1,2 @@
+# CrawlingBossByScrapy
+用scrapy爬取Boss直聘职位信息
