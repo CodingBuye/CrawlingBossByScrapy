@@ -15,7 +15,7 @@ SPIDER_MODULES = ['Boss.spiders']
 NEWSPIDER_MODULE = 'Boss.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-# USER_AGENT = 'Boss (+http://www.yourdomain.com)'
+USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -63,9 +63,9 @@ DOWNLOAD_DELAY = 0.5
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#    'Boss.pipelines.BossPipeline': 300,
-# }
+ITEM_PIPELINES = {
+   'Boss.pipelines.BossPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -87,3 +87,9 @@ DOWNLOAD_DELAY = 0.5
 # HTTPCACHE_DIR = 'httpcache'
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+
+mongo_host = "127.0.0.1"
+mongo_port = 27017
+mongo_db_name = "boss"
+mongo_db_connection = "boss_job"
