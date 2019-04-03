@@ -11,6 +11,7 @@ import scrapy
 class BossItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    # 定义数据结构
     job_name = scrapy.Field()        # 职位名称
     monthly_salary = scrapy.Field()  # 月薪
     company_name = scrapy.Field()    # 公司名称
@@ -20,5 +21,3 @@ class BossItem(scrapy.Item):
     is_listed = scrapy.Field()       # 是否上市
     experience = scrapy.Field()      # 工作经验
     education = scrapy.Field()       # 学历
-
-
